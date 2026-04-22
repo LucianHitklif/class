@@ -5,4 +5,12 @@ class Zombie:
 
     def bite(self, damage):
         self.hp -= damage
-        return
+        return self.hp
+
+
+m1 = Zombie('Мясник', 100)
+
+damage = int(input("Введите силу укуса: "))
+res = m1.bite(damage)
+
+print(f"Остаток здоровья: {res}")
